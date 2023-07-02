@@ -35,7 +35,7 @@ pipeline {
     stage('Cleanup the docker image') {
       steps {
         script {
-          sh 'docker rmi 303150498045.dkr.ecr.us-east-1.amazonaws.com/final-assignment:${BUILD_NUMBER}'
+          sh 'docker rmi 191351159627.dkr.ecr.us-east-1.amazonaws.com/final-assignment:${BUILD_NUMBER}'
           sh 'docker rmi final-assignment:${BUILD_NUMBER}'
         }
       }
